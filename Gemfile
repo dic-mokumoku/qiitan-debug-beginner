@@ -25,6 +25,7 @@ gem 'rack-dev-mark'
 gem 'bootsnap', '>= 1.1.0', require: false
 gem 'retryable'
 gem 'aws-sdk-s3'
+gem 'pry-rails'
 
 source 'https://rails-assets.org' do
   gem 'rails-assets-toastr'
