@@ -6,7 +6,7 @@ class User < ApplicationRecord
   has_many :stocks, dependent: :destroy
   has_many :comments, dependent: :destroy
 
-  validates :username, presence: true, uniqueness: true, format: { with: /\A[0-9a-zA-Z@_-]{6,}\z/ }, length: { maximum: 20 }
+  validates :username, presence: true, uniqueness: true, length: { maximum: 20 }
   VALID_EMAIL_REGEX = /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i
   validates :email, presence: true, length: { maximum: 255 },
             format: { with: VALID_EMAIL_REGEX },
