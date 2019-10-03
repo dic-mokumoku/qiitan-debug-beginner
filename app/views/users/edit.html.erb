@@ -11,6 +11,7 @@
             <%= image_tag f.object.profile_image, height: 100 %>
           </div>
         <% end %>
+      <% end %>
         <%= f.input_field :profile_image, as: :file, accept: 'image/*' %>
       <%= f.input :password, autocomplete: 'new-password', input_html: { class: 'fit-input' }, hint: '空欄のままなら変更しません' %>
       <%= f.input :password_confirmation, autocomplete: 'new-password', input_html: { class: 'fit-input' } %>
